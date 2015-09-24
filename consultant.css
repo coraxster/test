@@ -1,0 +1,290 @@
+.consult{
+	position: fixed;
+	width: 300px;
+	bottom: 0;
+	right: 10%;
+	box-shadow: 0 0 5px 2px rgba(0,0,0,.35);
+	border: 1px solid rgba(0,0,0,0.1);
+	border-radius: 3px;
+	background-color: white;
+	z-index: 5;
+}
+
+#consult-head{
+	display: block;
+	cursor: pointer;
+	padding: 10px 10px 10px 12px;
+	border-radius: 5px;
+	border: 1px solid #dbdbdb;
+	background: rgb(62,181,241); /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  rgba(62,181,241,1) 0%, rgba(77,89,161,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(62,181,241,1)), color-stop(100%,rgba(77,89,161,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg,  rgba(62,181,241,1) 0%,rgba(77,89,161,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg,  rgba(62,181,241,1) 0%,rgba(77,89,161,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg,  rgba(62,181,241,1) 0%,rgba(77,89,161,1) 100%); /* IE10+ */
+    background: linear-gradient(135deg,  rgba(62,181,241,1) 0%,rgba(77,89,161,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3eb5f1', endColorstr='#4d59a1',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    font-size: 16px;
+    line-height: 16px;
+    color: white;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#pin{
+	content: "";
+	display: inline-block;
+	position: absolute;
+	width: 11px;
+	height: 11px;
+	right: 12px;
+	top:12px;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	background: #d72020;
+	border: 1px solid rgba(32, 36, 215, 0.55);
+	box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.5),
+    0 2px 2px rgba(0,0,0,0.3),
+    0 0 4px 1px rgba(0,0,0,0.2);
+}
+
+#consult-online{
+	display: none;
+	
+}
+
+#consult-namebox{
+	display: block;
+	position: relative;
+	padding: 0px 10px 5px 10px;
+	height: 29px;
+    background-color: #e9e9e9;
+    border-top: 1px solid #ffffff;
+}
+
+#consult-photo{
+	width: 55px;
+	height: 55px;
+	top: -30px;
+	background: white;
+	border: 3px solid rgba(255, 255, 255, 0.3);
+	border-radius: 100px;
+	box-shadow:
+    inset 0 1px 0 rgba(255,255,255,1),
+    0px 2px 2px rgba(222, 222, 222, 0.84),
+    0px 8px 10px 1px rgba(222, 222, 222, 0.3);
+}
+
+#consult-name{
+	display: inline-block;
+	color: black;
+	font-size: 21px;
+	line-height: 21px;
+	font-variant: small-caps;
+	margin: 5px 5px 5px 8px;
+	vertical-align: top;
+}
+
+#consult-listbox{
+	height: 365px;
+	margin-bottom: 3px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	border-bottom: 1px dotted #bababa;
+}
+
+#consult-message{
+	display: inline-block;
+	height: 40px;
+	width: 187px;
+	resize: none;
+	margin: 5px 0px 5px 5px;
+	padding: 5px;
+	outline: none;
+	-moz-appearance: none;
+	border: 1px solid #c5c5c5;
+	border-radius: 3px;
+	font-size: 14px;
+	box-shadow: inset 0 1px 3px #b3b3b3, 0 1px 0 rgba(255,255,255,0.5);
+-moz-box-shadow: inset 0 1px 3px #b3b3b3, 0 1px 0 rgba(255,255,255,0.5);
+-webkit-box-shadow: inset 0 1px 3px #b3b3b3, 0 1px 0 rgba(255,255,255,0.5);
+}
+
+.consult-but, .consult-but:visited {
+  display: inline-block;
+  margin: 15px 2px 3px 1px;
+  padding: 8px 8px;
+  background: #d5d7d8; 
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 4px;
+  transition: all 0.3s ease-out;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.5),
+    0 2px 2px rgba(0,0,0,0.3),
+    0 0 4px 1px rgba(0,0,0,0.2);
+  /* Font styles */
+  font-size: 14px;  
+  color: #5a5a5a;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+  
+.consult-but:hover  { 
+	background: rgba(225, 226, 226, 0.8); 
+	cursor: pointer;
+}
+
+.consult-but:active{
+    box-shadow:
+        inset 0 2px 2px rgba(0,0,0,0.3),
+        inset 0 0 4px 1px rgba(0,0,0,0.2);
+
+}
+
+#consult-offlinemessage{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(237, 237, 237, 0.9);
+	z-index: 6;
+	font-size: 14px;
+	line-height: 22px;
+}
+
+#consult-offlinemessage p{
+	color: black;
+	padding: 100px 20px 20px 20px;
+	text-align: center;
+}
+
+#consult-offlinemail{
+	display: inline-block;
+	width: 185px;
+	margin: 5px 0px 5px 5px;
+	padding: 5px;
+	outline: none;
+	-moz-appearance: none;
+	border: 1px solid #c5c5c5;
+	border-radius: 3px;
+	font-size: 14px;
+	box-shadow: inset 0 1px 3px #b3b3b3, 0 1px 0 rgba(255,255,255,0.5);
+-moz-box-shadow: inset 0 1px 3px #b3b3b3, 0 1px 0 rgba(255,255,255,0.5);
+-webkit-box-shadow: inset 0 1px 3px #b3b3b3, 0 1px 0 rgba(255,255,255,0.5);
+}
+
+#consult-offlinetext{
+	display: inline-block;
+	height: 90px;
+	width: 278px;
+	resize: none;
+	margin: 5px 0px 5px 5px;
+	padding: 5px;
+	outline: none;
+	-moz-appearance: none;
+	border: 1px solid #c5c5c5;
+	border-radius: 3px;
+	font-size: 14px;
+	box-shadow: inset 0 1px 3px #b3b3b3, 0 1px 0 rgba(255,255,255,0.5);
+-moz-box-shadow: inset 0 1px 3px #b3b3b3, 0 1px 0 rgba(255,255,255,0.5);
+-webkit-box-shadow: inset 0 1px 3px #b3b3b3, 0 1px 0 rgba(255,255,255,0.5);
+}
+
+#consult-offlinesendmes, #consult-offlinesendmes:visited {
+  display: inline-block;
+  margin: 3px 2px 3px 1px;
+  padding: 8px 8px;
+  background: #d5d7d8; 
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 4px;
+  transition: all 0.3s ease-out;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.5),
+    0 2px 2px rgba(0,0,0,0.3),
+    0 0 4px 1px rgba(0,0,0,0.2);
+  /* Font styles */
+  font-size: 14px;  
+  color: #5a5a5a;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+  
+#consult-offlinesendmes:hover  { 
+	background: rgba(225, 226, 226, 0.8); 
+	cursor: pointer;
+}
+
+#consult-offlinesendmes:active{
+    box-shadow:
+        inset 0 2px 2px rgba(0,0,0,0.3),
+        inset 0 0 4px 1px rgba(0,0,0,0.2);
+
+}
+
+
+
+#m_online{
+	width: 100%;
+}
+
+#m_online > span {
+    font: 60%/80% sans-serif;
+    display: block;
+    margin: 15px 7px 0px 7px;
+    clear: both;
+}
+
+#m_online > span.spanright{
+	text-align: right;
+}
+
+.mo_msg-left,
+.mo_msg-right {
+	max-width: 80%;
+	display: inline-block;
+	overflow: hidden;
+    border-radius: 12px;
+    margin: 5px 10px 10px;
+    padding: 8px;
+    font-size: 14px;
+    line-height: 16px;
+}
+.mo_msg-left a,
+.mo_msg-right a{
+	color: white;
+}
+
+
+.mo_msg-left {
+    background-color: #ddd;
+    color: black;
+    float: left;
+}
+.mo_msg-right {
+    background-color: #4688c9;
+    color: white;
+    float: right;
+}
+
+#m_online span b{
+	margin-right: 3px;
+}
+
